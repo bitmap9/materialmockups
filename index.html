@@ -7,6 +7,7 @@
 	<title>Material Mockups</title>
 	<link rel="stylesheet" href="main.css" type="text/css" />
 	<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 </head>
 
@@ -97,7 +98,7 @@
 	  </section>
 
 	  <section id="checkout">
-  	  <h2>Get the wireframe kit</h2>
+  	  <h2 id="scrollspot">Get the wireframe kit</h2>
   	  <ul>
     	  <li>15 artboards</li>
     	  <li>All elements in a separate file</li>
@@ -156,7 +157,7 @@
 <script>
 $("#cta").click(function() {
     $('html, body').animate({
-        scrollTop: $("#checkout").offset().top
+        scrollTop: $("#scrollspot").offset().top
     }, 1000);
 });
 </script>
