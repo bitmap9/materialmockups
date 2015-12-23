@@ -1,0 +1,92 @@
+*,
+*:before,
+*:after {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  outline: none;
+}
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+body {
+  font-size: $ff-1-small;
+  font-family: $ff-1;
+  line-height: normal;
+  color: $grey800;
+  height: 100%;
+  text-align: center;
+}
+a {
+  color: $link-color;
+  text-decoration: none;
+  border-bottom: 2px solid $grey100;
+  transition: border-bottom-color .2s ease-in-out;
+  &:hover   {
+    border-bottom-color: $color-primary;
+
+  }
+}
+
+// Typography
+h1, h2, h3, h4, .btn {
+  font-family: $ff-2;
+}
+h1 {
+  font-size: $ff-2-xlarge;
+  font-weight: 700;
+  letter-spacing: 0.4rem;
+}
+h2 {
+  font-size: $ff-2-large;
+  font-weight: 700;
+}
+h3 {
+  font-size: $ff-2-medium;
+  font-weight: 700;
+}
+p {
+  line-height: 1.4;
+}
+
+// Buttons
+.btn {
+  border: none !important;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  font-size: $ff-2-small;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 12px 26px;
+  color: #fff;
+  background-color: $color-primary;
+  border-radius: $radius;
+  transition: background-color .2s ease-in-out;
+  box-shadow: 0 3px 20px rgba(255,82,82,0.3), 0 10px 30px rgba(0,0,0,0.1);
+  &:hover {
+    color: #fff;
+    background-color: darken($color-primary, 5%);
+  }
+  &.disabled {
+    cursor: default;
+    box-shadow: none;
+    background-color: $grey800;
+  }
+}
+
+// Default icon size
+.icon {
+  width: 16px;
+  height: 16px;
+}
+
+// Layout
+.wrap {
+  max-width: 980px;
+  margin: 0 auto;
+}
+.disabled {
+  opacity: 0.4;
+}

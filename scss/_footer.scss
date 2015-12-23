@@ -1,0 +1,29 @@
+footer {
+  padding-bottom: 30px;
+  text-align: center;
+  #logo {
+    padding-bottom: 20px;
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+    span {
+      color: $color-primary;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: $ff-1-small - 0.2;
+      + span {
+        color: $grey800;
+      }
+    }
+  }
+  ul {
+    li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+    a {
+      border: none;
+    }
+  }
+}

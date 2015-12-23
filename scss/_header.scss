@@ -1,0 +1,28 @@
+header {
+  background-image: url(images/header-bg.png);
+  background-size: cover;
+  background-color: $grey800;
+  color: #fff;
+  height: 500px;
+  position: relative;
+}
+#branding-upper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  .btn {
+    padding: 10px 22px;
+  }
+}
+#branding-lower {
+  img {
+    position: absolute;
+    margin-left: -317px;
+    left: 50%;
+    top: 198px;
+  }
+  p {
+    font-size: $ff-1-large;
+  }
+}
