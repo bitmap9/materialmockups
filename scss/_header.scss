@@ -5,14 +5,21 @@ header {
   color: #fff;
   height: 500px;
   position: relative;
+  @media (max-device-width: 599px) {
+    height: auto;
+  }
 }
 #branding-upper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  //display: flex;
+  //align-items: center;
+  //justify-content: space-between;
   padding: 20px;
+  @media (max-device-width: 599px) {
+    padding: $sidepadding;
+  }
   .btn {
     padding: 10px 22px;
+    box-shadow: 0 3px 20px rgba(0,0,0,0.1), 0 10px 30px rgba(0,0,0,0.1);
   }
 }
 #branding-lower {
@@ -21,8 +28,26 @@ header {
     margin-left: -317px;
     left: 50%;
     top: 198px;
+    @media (max-device-width: 599px) {
+      display: none;
+    }
   }
   p {
     font-size: $ff-1-large;
+  }
+  .promo {
+    display: none;
+    width: 100%;
+    height: 400px;
+    background: url(../images/promo.png) no-repeat center top;
+    background-size: cover;
+    @media (max-device-width: 599px) {
+      display: block;
+    }
+  }
+  h1, p {
+    @media (max-device-width: 599px) {
+      padding: 0 $sidepadding;
+    }
   }
 }

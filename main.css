@@ -71,8 +71,7 @@ h2 {
   font-weight: 700; }
 
 h3 {
-  font-size: 1.8rem;
-  font-weight: 700; }
+  font-size: 1.8rem; }
 
 p {
   line-height: 1.4;
@@ -90,12 +89,13 @@ p {
   color: #fff;
   background-color: #ff5252;
   border-radius: 2px;
-  -webkit-transition: background-color .2s ease-in-out;
-  transition: background-color .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
   box-shadow: 0 3px 20px rgba(255, 82, 82, 0.3), 0 10px 30px rgba(0, 0, 0, 0.1); }
   .btn:hover {
-    color: #fff;
-    background-color: #ff3939; }
+    color: #ff5252;
+    background-color: #fff;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1), 0 10px 30px rgba(0, 0, 0, 0.1); }
   .btn.disabled {
     cursor: default;
     box-shadow: none;
@@ -119,35 +119,51 @@ header {
   color: #fff;
   height: 500px;
   position: relative; }
+  @media (max-device-width: 599px) {
+    header {
+      height: auto; } }
 
 #branding-upper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   padding: 20px; }
+  @media (max-device-width: 599px) {
+    #branding-upper {
+      padding: 5%; } }
   #branding-upper .btn {
-    padding: 10px 22px; }
+    padding: 10px 22px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1), 0 10px 30px rgba(0, 0, 0, 0.1); }
 
 #branding-lower img {
   position: absolute;
   margin-left: -317px;
   left: 50%;
   top: 198px; }
+  @media (max-device-width: 599px) {
+    #branding-lower img {
+      display: none; } }
 #branding-lower p {
   font-size: 2.1rem; }
+#branding-lower .promo {
+  display: none;
+  width: 100%;
+  height: 400px;
+  background: url(../images/promo.png) no-repeat center top;
+  background-size: cover; }
+  @media (max-device-width: 599px) {
+    #branding-lower .promo {
+      display: block; } }
+@media (max-device-width: 599px) {
+  #branding-lower h1, #branding-lower p {
+    padding: 0 5%; } }
 
 main {
   padding-top: 240px; }
+  @media (max-device-width: 599px) {
+    main {
+      padding-top: 40px; } }
 
+@media (max-device-width: 599px) {
+  #intro {
+    padding: 0 5%; } }
 #intro img {
   margin: 0 16px; }
 #intro h2 {
@@ -160,8 +176,12 @@ main {
   margin: 0 auto; }
 
 #features {
-  padding-top: 50px;
+  padding-top: 100px;
   padding-bottom: 100px; }
+  @media (max-device-width: 599px) {
+    #features {
+      padding-top: 20px;
+      padding-bottom: 40px; } }
   #features ul + ul {
     margin-top: 40px; }
   #features ul {
@@ -169,6 +189,14 @@ main {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
+    @media (max-device-width: 599px) {
+      #features ul {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        margin-top: 0 !important; } }
     #features ul img {
       margin-bottom: -10px; }
     #features ul li {
@@ -176,6 +204,9 @@ main {
       -webkit-flex-basis: 50%;
           -ms-flex-preferred-size: 50%;
               flex-basis: 50%; }
+      @media (max-device-width: 599px) {
+        #features ul li {
+          padding: 20px 0; } }
       #features ul li p {
         color: #7e848c;
         margin-top: 6px; }
@@ -184,6 +215,11 @@ main {
 #elements {
   padding: 100px 0;
   background-color: #d3d6db; }
+  @media (max-device-width: 599px) {
+    #screens,
+    #elements {
+      padding: 40px 0;
+      width: 100% !important; } }
   #screens p,
   #elements p {
     font-size: 1.9rem;
@@ -192,12 +228,24 @@ main {
   #elements img {
     margin-top: 40px;
     max-width: 90%; }
+  @media (max-device-width: 599px) {
+    #screens h2, #screens p,
+    #elements h2,
+    #elements p {
+      padding: 0 5%; } }
 
 #elements {
   background-color: #edeff2; }
 
 #checkout {
   padding: 100px 0; }
+  @media (max-device-width: 599px) {
+    #checkout {
+      padding: 40px 5%;
+      width: 100% !important; } }
+  @media (max-device-width: 599px) {
+    #checkout h2 span {
+      display: block; } }
   #checkout ul {
     color: #d3d6db;
     text-align: left;
@@ -205,6 +253,11 @@ main {
     list-style-position: inside;
     margin: 20px auto 60px;
     width: 340px; }
+    @media (max-device-width: 599px) {
+      #checkout ul {
+        width: auto;
+        list-style-position: outside;
+        padding-left: 10%; } }
     #checkout ul li {
       color: #474a4f;
       font-size: 2.1rem;
@@ -213,6 +266,9 @@ main {
 #pricing {
   width: 500px;
   margin: 0 auto; }
+  @media (max-device-width: 599px) {
+    #pricing {
+      width: auto; } }
   #pricing > div {
     display: -webkit-box;
     display: -webkit-flex;
@@ -225,9 +281,24 @@ main {
     border: 6px #edeff2 solid;
     margin: 30px 0;
     padding: 20px; }
+    @media (max-device-width: 599px) {
+      #pricing > div {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
     #pricing > div span {
       font-size: 2.1rem;
-      padding: 0 20px; }
+      padding: 0 20px;
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      text-align: left; }
+      @media (max-device-width: 599px) {
+        #pricing > div span {
+          padding: 20px; } }
     #pricing > div img + img {
       margin-left: 6px; }
     #pricing > div strong {
@@ -255,8 +326,20 @@ footer {
       font-size: 1.3rem; }
       footer #logo span + span {
         color: #474a4f; }
-  footer ul li {
-    display: inline-block;
-    margin: 0 10px; }
-  footer ul a {
-    border: none; }
+  footer ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    footer ul li {
+      margin: 0 10px; }
+    footer ul a {
+      border: none; }

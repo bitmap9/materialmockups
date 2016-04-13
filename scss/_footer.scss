@@ -18,8 +18,10 @@ footer {
     }
   }
   ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     li {
-      display: inline-block;
       margin: 0 10px;
     }
     a {
