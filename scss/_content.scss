@@ -21,6 +21,11 @@ main {
     max-width: 600px;
     margin: 0 auto;
   }
+  #apps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 #features {
   padding-top: 100px;
@@ -40,12 +45,15 @@ main {
     }
     img {
       margin-bottom: -10px;
+      @media (max-device-width: 599px) {
+        margin-bottom: -14px
+      }
     }
     li {
       padding: 0 40px;
       flex-basis: 50%;
       @media (max-device-width: 599px) {
-        padding: 20px 0;
+        padding: 16px 0;
       }
       p {
         color: $grey500;
@@ -143,5 +151,10 @@ main {
       flex-grow: 1;
       text-align: right;
     }
+  }
+  #bundle div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
