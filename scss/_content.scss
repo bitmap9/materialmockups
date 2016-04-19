@@ -13,7 +13,10 @@ main {
   }
   h2 {
     margin-top: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    @media (max-device-width: 599px) {
+      margin-bottom: 20px;
+    }
   }
   p {
     font-size: $ff-1-medium;

@@ -45,10 +45,10 @@ h1 {
 h2 {
   font-size: $ff-2-large;
   font-weight: 700;
-  margin-bottom: 10px;
   @media (max-device-width: 599px) {
     line-height: 1.1em;
     font-size: $ff-2-large - 0.2;
+    margin-bottom: 10px;
   }
 }
 h3 {
