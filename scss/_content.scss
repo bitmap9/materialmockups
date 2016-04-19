@@ -54,6 +54,7 @@ main {
       flex-basis: 50%;
       @media (max-device-width: 599px) {
         padding: 16px 0;
+        flex-basis: auto;
       }
       p {
         color: $grey500;

@@ -221,7 +221,10 @@ main {
               flex-basis: 50%; }
       @media (max-device-width: 599px) {
         #features ul li {
-          padding: 16px 0; } }
+          padding: 16px 0;
+          -webkit-flex-basis: auto;
+              -ms-flex-preferred-size: auto;
+                  flex-basis: auto; } }
       #features ul li p {
         color: #7e848c;
         margin-top: 6px; }
