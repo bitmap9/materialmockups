@@ -37,7 +37,7 @@ h1 {
   font-size: $ff-2-xlarge;
   font-weight: 700;
   letter-spacing: 0.4rem;
-  @media (max-device-width: 599px) {
+  @media (max-width: 599px) {
     font-size: $ff-2-xlarge - 0.6;
     letter-spacing: 0.2rem;
   }
@@ -45,7 +45,7 @@ h1 {
 h2 {
   font-size: $ff-2-large;
   font-weight: 700;
-  @media (max-device-width: 599px) {
+  @media (max-width: 599px) {
     line-height: 1.1em;
     font-size: $ff-2-large - 0.2;
     margin-bottom: 10px;

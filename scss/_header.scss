@@ -5,7 +5,7 @@ header {
   color: #fff;
   height: 500px;
   position: relative;
-  @media (max-device-width: 599px) {
+  @media (max-width: 599px) {
     height: auto;
   }
 }
@@ -14,7 +14,7 @@ header {
   //align-items: center;
   //justify-content: space-between;
   padding: 20px;
-  @media (max-device-width: 599px) {
+  @media (max-width: 599px) {
     padding: $sidepadding;
   }
   .btn {
@@ -28,7 +28,7 @@ header {
     margin-left: -317px;
     left: 50%;
     top: 198px;
-    @media (max-device-width: 599px) {
+    @media (max-width: 599px) {
       display: none;
     }
   }
@@ -41,12 +41,12 @@ header {
     height: 400px;
     background: url(../images/promo.png) no-repeat center top;
     background-size: cover;
-    @media (max-device-width: 599px) {
+    @media (max-width: 599px) {
       display: block;
     }
   }
   h1, p {
-    @media (max-device-width: 599px) {
+    @media (max-width: 599px) {
       padding: 0 $sidepadding;
     }
   }
