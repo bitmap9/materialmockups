@@ -47,7 +47,8 @@ body {
   line-height: normal;
   color: #474a4f;
   height: 100%;
-  text-align: center; }
+  text-align: center;
+  background-color: #fff; }
 
 a {
   color: #474a4f;
